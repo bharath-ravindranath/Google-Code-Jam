@@ -3,9 +3,7 @@ def lastword(case):
 
 	final_word = ''
 	for  c in word:
-		if not final_word:
-			final_word = final_word + c
-		elif c >= final_word[0]:
+		if c >= final_word[0]:
 			final_word = c + final_word
 		else:
 			final_word = final_word + c
